@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="@string/audio_preferences">
+
+        <ListPreference
+               android:key="soundVolume"
+               android:defaultValue="1"
+               android:title="@string/audio_volume"
+               android:entries="@array/audio_list_preference"
+               android:entryValues="@array/audio_values_list_preference"
+                />
+
+        <CheckBoxPreference
+                android:key="vibration_pref"
+                android:defaultValue="true"
+                android:title="@string/vibration"
+            />
+
+
+        <ListPreference
+               android:key="color_pref"
+               android:defaultValue="1"
+               android:title="@string/color"
+               android:entries="@array/color_list_preference"
+               android:entryValues="@array/color_values_list_preference"
+                />
+               <!--android:summary="@string/summary_list_preference"
+               android:dialogTitle="@string/dialog_title_list_preference"
+                -->
+    </PreferenceCategory>
+</PreferenceScreen>

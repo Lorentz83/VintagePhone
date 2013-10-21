@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- landscape -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            >
+        <TextView
+                android:id="@+id/label_call_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_lbl"/>
+        <EditText
+                android:id="@+id/label_number"
+                android:layout_below="@id/label_call_to"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:text=""/>
+        <ImageButton
+                android:id="@+id/call_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_number"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/btn_call"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/dialer_container"
+            android:gravity="fill"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            />
+</LinearLayout>
